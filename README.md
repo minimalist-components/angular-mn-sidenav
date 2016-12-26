@@ -8,7 +8,7 @@ An angular directive to [mn-sidenav](https://github.com/minimalist-components/mn
 
 <!-- See the [demo](http://codepen.io/darlanmendonca/full/akgXQq) -->
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/sources/example/mn-sidenav.gif)](http://codepen.io/darlanmendonca/full/akgXQq)
+<!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/sources/example/mn-sidenav.gif)](http://codepen.io/darlanmendonca/full/akgXQq) -->
 
 ### Install
 
@@ -39,4 +39,20 @@ And then, in your html, you can use the tag:
 
 
 For more details check docs [mn-sidenav docs](https://github.com/minimalist-components/mn-sidenav).
+
+Now, about service, you can use the service `$mnSidenav`, like below:
+
+```js
+angular
+  .module('app')
+  .controller('HomeController', HomeController)
+
+function HomeController($mnSidenav) {
+  // to open, call method open with id of sidenav
+  $mnSidenav.open('menu')
+
+  // to close sidenav visible, just call .close()
+  $mnSidenav.close()
+}
+```
 
