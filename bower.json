@@ -1,0 +1,19 @@
+{
+  "name": "angular-mn-sidenav",
+  "version": "0.0.1",
+  "description": "An angular directive and service to mn-sidenav",
+  "main": [
+    "dist/angular-mn-sidenav.js",
+    "dist/angular-mn-sidenav.css"
+  ],
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-messages": "1.6.1",
+    "mn-sidenav": "0.0.1"
+  }
+}
