@@ -9,7 +9,7 @@ html(ng-app='app')
       -webkit-font-smoothing: antialiased;
     }
 
-body
+body(ng-controller='IndexController')
   h1 mn-sidenav
 
   button(open-sidenav='menu') show menu
@@ -32,10 +32,7 @@ body
       .module('app')
       .controller('IndexController', IndexController);
 
-    function IndexController() {
-      this.credentials = {
-        username: undefined,
-        password: undefined,
-      };
+    function IndexController($mnSidenav) {
+      console.log($mnSidenav.open('menu'))
     }
 
