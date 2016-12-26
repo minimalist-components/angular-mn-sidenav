@@ -1,7 +1,7 @@
 {
   "name": "angular-mn-sidenav",
   "version": "0.0.1",
-  "description": "An angular directive and service to mn-sidenav",
+  "description": "An angular service to mn-sidenav",
   "main": [
     "dist/angular-mn-sidenav.js",
     "dist/angular-mn-sidenav.css"
@@ -13,7 +13,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "1.6.1",
-    "angular-messages": "1.6.1",
     "mn-sidenav": "0.0.1"
   }
 }
