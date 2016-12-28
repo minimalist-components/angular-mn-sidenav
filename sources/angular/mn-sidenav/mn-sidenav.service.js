@@ -5,10 +5,10 @@ angular
 function $mnSidenav() {
   this.open = open
   this.close = close
+  this.toggle = toggle
 
   function open(id) {
     const sidenav = document.querySelector(`mn-sidenav#${id}`)
-    console.log(sidenav)
     if (sidenav) {
       sidenav.open()
     }
@@ -18,6 +18,13 @@ function $mnSidenav() {
     const sidenav = document.querySelector('mn-sidenav.visible')
     if (sidenav) {
       sidenav.close()
+    }
+  }
+
+  function toggle(id) {
+    const sidenav = document.querySelector('mn-sidenav.visible')
+    if (sidenav) {
+      sidenav.toggle()
     }
   }
 }
