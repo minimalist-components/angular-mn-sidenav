@@ -1,8 +1,8 @@
 angular
   .module('mn-sidenav')
-  .service('$mnSidenav', $mnSidenav)
+  .service('MnSidenav', MnSidenav)
 
-function $mnSidenav() {
+function MnSidenav() {
   this.open = open
   this.close = close
   this.toggle = toggle
