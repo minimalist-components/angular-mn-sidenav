@@ -22,7 +22,7 @@ function MnSidenav() {
   }
 
   function toggle(id) {
-    const sidenav = document.querySelector('mn-sidenav.visible')
+    const sidenav = document.querySelector(`mn-sidenav#${id}`)
     if (sidenav) {
       sidenav.toggle()
     }

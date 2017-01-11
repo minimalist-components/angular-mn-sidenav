@@ -12,7 +12,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "angular": "1.6.1",
-    "mn-sidenav": "^0.0.7"
+    "angular": "^1.6.1",
+    "mn-sidenav": "^0.1.0"
   }
 }

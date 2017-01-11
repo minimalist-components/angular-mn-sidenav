@@ -9,7 +9,7 @@ html(ng-app='app')
       -webkit-font-smoothing: antialiased;
     }
 
-body(ng-controller='IndexController')
+body(ng-controller='IndexController as controller')
   h1 mn-sidenav
 
   button(open-sidenav='menu') show menu
@@ -32,10 +32,10 @@ body(ng-controller='IndexController')
       .module('app')
       .controller('IndexController', IndexController);
 
-    function IndexController($mnSidenav) {
-      //- console.log($mnSidenav.open('menu'))
-      //- window.setTimeout(function() {
-      //-   $mnSidenav.close()
-      //- }, 2000)
+    function IndexController(MnSidenav) {
+      MnSidenav.open('menu')
+      window.setTimeout(function() {
+        MnSidenav.close()
+      }, 2000)
     }
 
