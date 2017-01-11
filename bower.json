@@ -13,6 +13,6 @@
   "homepage": "https://minimalist-components.github.io/mn-sidenav/",
   "dependencies": {
     "angular": "^1.6.1",
-    "mn-sidenav": "^0.1.0"
+    "mn-sidenav": "^0.1.1"
   }
 }
