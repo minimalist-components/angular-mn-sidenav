@@ -6,7 +6,7 @@
 
 An angular directive to [mn-sidenav](https://github.com/minimalist-components/mn-sidenav)
 
-<!-- See the [demo](http://codepen.io/darlanmendonca/full/akgXQq) -->
+See the [demo](https://github.com/minimalist-components/mn-sidenav)
 
 <!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/sources/example/mn-sidenav.gif)](http://codepen.io/darlanmendonca/full/akgXQq) -->
 
