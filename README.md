@@ -28,7 +28,7 @@ angular.module('app', [
 ]);
 ```
 
-And then, in your html, you can use the tag `mn-sidenav`
+And then, in your html, you can use the directive `mn-sidenav`
 
 ```html
 <mn-sidenav id="menu">
