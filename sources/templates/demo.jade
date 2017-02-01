@@ -1,0 +1,95 @@
+html(ng-app='app')
+  meta(name='viewport' content='width=device-width, user-scalable=no')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
+
+  block styles
+    link(rel='stylesheet' href='docs/vendor.css')
+
+  style.
+
+    mn-sidenav h2 {font-weight: normal}
+    .mn-table-list .mn-item {padding: 1em 2em}
+
+body(ng-controller='IndexController as controller')
+  h2 angular-mn-sidenav
+  include github-corner
+
+  .mn-layout-fullscreen.mn-layout-centered
+    .mn-layout-container
+      div.mn-layout-row.align-center
+        button.mn-button(open-sidenav='menu') Show sidenav
+        button.mn-button(toggle-sidenav='menu') Toggle sidenav
+        button.mn-button(open-sidenav='another') Show sidenav right
+
+  mn-sidenav#menu.padding-title
+    h2 Menu
+    .mn-table-list
+      a.mn-item(href='#' close-sidenav) Stark
+      a.mn-item(href='#' close-sidenav) Lannister
+      a.mn-item(href='#' close-sidenav) Targaryen
+
+  mn-sidenav#another.right.padding-title
+    h2 Sidenav right
+    .mn-table-list
+      a.mn-item(href='#' close-sidenav) Stark
+      a.mn-item(href='#' close-sidenav) Lannister
+      a.mn-item(href='#' close-sidenav) Targaryen
+
+  .docs.mn-layout-container
+    mn-code.
+      npm install --save angular-mn-sidenav
+
+    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.
+
+    h3 usage
+    mn-code.js.
+      // add dependency in you module
+      angular.module('app', [
+        'mn-sidenav'
+      ])
+
+    p And then, in your html, you can use the tag <stron class="tag"g>mn-sidenav</strong>
+
+    mn-code.html.
+      <mn-sidenav id="menu">
+        <!-- content here -->
+      </mn-sidenav>
+
+    p For more details check <a href="https://github.com/minimalist-components/mn-sidenav/">docs mn-sidenav</a>
+
+    p Now, about service, you can use the service <strong>$mnSidenav</strong>, like below
+
+    mn-code.js.
+      angular
+        .module('app')
+        .controller('HomeController', HomeController)
+
+      function HomeController($mnSidenav) {
+        // to open, call method open with id of sidenav
+        $mnSidenav.open('menu')
+
+        // to close sidenav visible, just call .close()
+        $mnSidenav.close()
+      }
+
+  block scripts
+    script(src='docs/vendor.js')
+    script(src='dist/angular-mn-sidenav.js')
+
+  script.
+    angular.module('app', [
+      'mn-sidenav',
+    ]);
+
+    angular
+      .module('app')
+      .controller('IndexController', IndexController);
+
+    function IndexController(MnSidenav) {
+      //- console.log('instanciated')
+      //- MnSidenav.open('menu')
+      //- window.setTimeout(function() {
+      //-   MnSidenav.close()
+      //- }, 2000)
+    }
+

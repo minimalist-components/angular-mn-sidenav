@@ -1,41 +1,9 @@
-html(ng-app='app')
-  meta(name='viewport' content='width=device-width, user-scalable=no')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
-  link(rel='stylesheet' href='styles/vendor.css')
-  style.
-    body {
-      font-family: 'Open Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
+extends demo
 
-body(ng-controller='IndexController as controller')
-  h1 mn-sidenav
+block styles
+  link(rel='stylesheet' href='https://rawgit.com/minimalist-components/angular-mn-sidenav/master/docs/vendor.css')
 
-  button(open-sidenav='menu') show menu
-  button(open-sidenav='another') show another
-
-  mn-sidenav#menu
-    button(close-sidenav) close
-
-  mn-sidenav.right#another
-    button(close-sidenav) close
-
-  script(src='vendor.js')
-  script(src='angular-mn-sidenav.js')
-  script.
-    angular.module('app', [
-      'mn-sidenav',
-    ]);
-
-    angular
-      .module('app')
-      .controller('IndexController', IndexController);
-
-    function IndexController(MnSidenav) {
-      MnSidenav.open('menu')
-      window.setTimeout(function() {
-        MnSidenav.close()
-      }, 2000)
-    }
+block scripts
+  script(src='https://rawgit.com/minimalist-components/angular-mn-sidenav/master/docs/vendor.js')
+  script(src='https://rawgit.com/minimalist-components/angular-mn-sidenav/master/dist/angular-mn-sidenav.js')
 

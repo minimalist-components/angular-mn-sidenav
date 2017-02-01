@@ -1,24 +1,23 @@
-[![Bower version](https://badge.fury.io/bo/angular-mn-sidenav.svg)](https://badge.fury.io/bo/angular-mn-sidenav)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
+[![npm version](https://badge.fury.io/js/angular-mn-sidenav.svg)](https://badge.fury.io/js/angular-mn-sidenav)
+[![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/angular-mn-sidenav.svg)](https://gemnasium.com/github.com/minimalist-components/angular-mn-sidenav)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 
 # angular-mn-sidenav
 
-An angular directive to [mn-sidenav](https://github.com/minimalist-components/mn-sidenav)
+An angular directive and service to [mn-sidenav](https://github.com/minimalist-components/mn-sidenav)
 
 See the [demo](https://github.com/minimalist-components/mn-sidenav)
 
-<!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/sources/example/mn-sidenav.gif)](http://codepen.io/darlanmendonca/full/akgXQq) -->
+[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/preview.gif)](https://minimalist-components.github.io/mn-sidenav/)
 
 ### Install
 
-With bower
-
 ```sh
-bower install --save angular-mn-sidenav
+npm install --save angular-mn-sidenav
 ```
 
-Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-sidenav/tree/master/dist)
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-sidenav/tree/master/dist) with your preferred tool.
 
 ### Usage
 
@@ -29,7 +28,7 @@ angular.module('app', [
 ]);
 ```
 
-And then, in your html, you can use the tag:
+And then, in your html, you can use the tag `mn-sidenav`
 
 ```html
 <mn-sidenav id="menu">
