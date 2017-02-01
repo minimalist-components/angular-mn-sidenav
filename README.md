@@ -7,7 +7,7 @@
 
 An angular directive and service to [mn-sidenav](https://github.com/minimalist-components/mn-sidenav)
 
-See the [demo](https://github.com/minimalist-components/angular-mn-sidenav)
+See the [demo](https://minimalist-components.github.io/angular-mn-sidenav/)
 
 [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-sidenav/master/preview.gif)](https://minimalist-components.github.io/angular-mn-sidenav/)
 
