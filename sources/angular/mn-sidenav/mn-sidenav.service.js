@@ -1,6 +1,6 @@
 angular
   .module('mn-sidenav')
-  .service('MnSidenav', MnSidenav)
+  .service('$mnSidenav', MnSidenav)
 
 function MnSidenav() {
   this.open = open
