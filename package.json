@@ -1,6 +1,6 @@
 {
   "name": "angular-mn-sidenav",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "an angular directive and service to mn-sidenav",
   "main": "dist/angular-mn-sidenav.js",
   "files": [
